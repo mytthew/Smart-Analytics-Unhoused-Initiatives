@@ -5,7 +5,9 @@ No matter where you live, encampments of unhoused people dot the landscape of ou
 **Goals**
 
 -Ascertain risk factors of unhoused persons and children. 
+
 -Identify factors of the largest percentage of individuals not seeking assistance.
+
 -Find markers of chronic patterns of homelessness.
 
 **Specifications**
