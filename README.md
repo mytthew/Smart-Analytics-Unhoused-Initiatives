@@ -1,4 +1,4 @@
-**Overview **
+**Overview**
 
 No matter where you live, encampments of unhoused people dot the landscape of our nation. Continuum of Care Programs are available to provide temporary, and permanent housing with the goal of long-term stability. What if these programs could keep individuals and families housed? Our team will analyze a national data source containing Point-in-Time (PIT) estimates of homelessness by Continuum of Care (CoC) geographic service area and by state as well as estimates of chronic homelessness from 2007 through 2023. Machine learning will be used to inform program facilitators by providing a personalized picture of a client's risk factors. This data will assist a caseworker in connecting the client with the specific mix of services that they need to successfully transition into a home.
 
