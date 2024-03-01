@@ -43,11 +43,18 @@ text-align: center;
   background-color: #fedc97;
 }
 
+.main {
+  overflow:auto;
+  background-color: #fefefe;
+  padding: 10px;
+  text-align: left;
+  text-decoration: none;
+}
 
 .section {
   display: -webkit-flex;
   display: flex;
-  padding: 0 20px;
+  padding: 5 20px;
 }
 
 .body {
@@ -56,6 +63,7 @@ text-align: center;
   padding: 10px;
   text-align: center;
   margin-top: 10px;
+  text-decoration: none;
 }
 
 .body2 {
@@ -64,6 +72,7 @@ text-align: center;
   padding: 10px;
   text-align: center;
   margin-top: 7px;
+  text-decoration: none;
 }
 
 .body3 {
@@ -72,6 +81,7 @@ text-align: center;
   padding: 10px;
   text-align: center;
   margin-top: 7px;
+  text-decoration: none;
 }
 
 .body4 {
@@ -81,6 +91,7 @@ text-align: center;
   padding: 10px;
   text-align: left;
   margin-top: 7px;
+  text-decoration: none;
 }
 
 .body5 {
@@ -90,6 +101,7 @@ text-align: center;
   padding: 10px;
   text-align: left;
   margin-top: 7px;
+  text-decoration: none;
 }
 
 .body6 {
@@ -99,6 +111,7 @@ text-align: center;
   padding: 10px;
   text-align: left;
   margin-top: 7px;
+  text-decoration: none;
 }
 
 .footer {
@@ -107,6 +120,7 @@ text-align: center;
   padding: 10px;
   text-align: center;
   margin-top: 7px;
+  text-decoration: none;
 }
 
 .button {
@@ -127,6 +141,7 @@ text-align: center;
   color:#033f63;
   border: 2px solid #033f63;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 620px) {
@@ -147,7 +162,7 @@ text-align: center;
  
   <ul class="navbar-nav">
     <a class="navbar-brand" href="index.html">
-      <img src="unhousedbrown.png" width="45" height="45" alt="Logo">
+      <img src="Resources/Images/unhousedbrown.png" width="45" height="45" alt="Logo">
     </a>
     <li class="nav-item">
       <a class="nav-link" href="#first">Initial Analysis</a>
@@ -187,13 +202,13 @@ text-align: center;
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="campunderbridge.jpg" alt="Under the Bridge" width="1000" height="400px">
+      <img src="Resources/Images/campunderbridge.jpg" alt="Under the Bridge" width="1000" height="400px">
     </div>
     <div class="carousel-item">
-      <img src="shelterbeds.jpg" alt="Shelter Beds" width="1000" height="400px">
+      <img src="Resources/Images/shelterbeds.jpg" alt="Shelter Beds" width="1000" height="400px">
     </div>
     <div class="carousel-item">
-      <img src="streetbags.jpg" alt="Sleeping Bags on the Street" width="1000" height="400px">
+      <img src="Resources/Images/streetbags.jpg" alt="Sleeping Bags on the Street" width="1000" height="400px">
     </div>
   </div>
   
@@ -208,8 +223,9 @@ text-align: center;
   <div class="main">
         
     <h2>Overview</h2>
-    <p>Brief summary of business need and solution.</p>
-    <p>More information about the analysis and its purpose.</p>
+    <h5><a href="https://interactive.wttw.com/firsthand/homeless/without-a-home-in-chicago-homelessness-in-2024-and-whats-to-come" target="_blank">Laval & Roxanne</a></h5>
+    <h5><a href="https://www.npr.org/2010/09/09/129753532/one-womans-journey-from-homeless-to-harvard" target="_blank">Liz Murray</a></h5>
+    <p>Our analysis aims to provide insights into the trends of homelessness in the United States, and to offer recommendations for program administrators to better support individuals and families experiencing homelessness. We utilized data from the U.S. Department of Housing and Urban Development (HUD) to analyze the Continuum of Care (CoC) program, which provides funding for homeless services. Our analysis focuses on the years 2007 to 2023, and we used machine learning to predict future trends in homelessness. We hope that our analysis will help program administrators make informed decisions to better support individuals and families experiencing homelessness.</p>
       </div>
 
 
@@ -224,24 +240,62 @@ text-align: center;
 <div class="body2">
   <h2 id="second">Machine Learning</h2>
   <p>Model analysis and results that can aid program administrators.</p>
-  <p><img src="ovrallpredict.png" alt="Overall Prediction" style="float:left;width:50%;height:auto;object-fit: cover;"></p>
-  <p><img src="yearlybeds.png" alt="Population v Beds" style="float:right;width:50%;height:auto;object-fit: cover;"></p>
+  <p><img src="Resources/Images/PolynomialRegression.png" alt="Polynomial Regression" style="float:center; width: 90%;height: 750px;"></p>
+  <p><img src="Resources/Images/ovrallpredict.png" alt="Overall Prediction" style="float:center;width:90%;height:750px;"></p>
+  <p><img src="Resources/Images/PCSstateleveldata.png" alt="Population v Beds" style="float:center;width: 90%;height:750px;"></p>
 </div>
 
 <div class="body3">
   <h2 id="third">Recommendations</h2>
-  <p>Viable solutions that can aid program administrators.</p>
-  <p><img src="keytohome.jpg" alt="Keyboard" style="float: inherit; width: 450px; height: 300px;"></p>
+  <p>Based on our analysis, we recommend that program administrators focus on the following:</p>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Continue Supporting Homeless Initiatives
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          We're seeing a general increase in homelessness count from before COVID to years following, though local surveying suggests that there is still great improvement in the homelessness count in even more densely-populated cities such as New York, Philadelphia and Chicago.
+        </div>
+      </div>
+    </div> 
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+          Root-Cause Approach to Homelessness
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          While temporary solutions such as overnight sheltering and grants do offer some assistance, various evidence-based policies, coupled with insights from our model, demonstrate that root-cause approaches are highly effective in addressing homelessness.
+        </div>
+      </div>
+    </div> 
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseThree">
+          Education & Public Awareness
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          By raising awareness about homelessness, we can address the misunderstandings and stereotypes associated with this issue. Increased awareness can garner greater support, encouraging more people to advocate for policies and programs that benefit homeless individuals and families. It's important to recognize that those experiencing homelessness are people with their own unique stories and challenges. Stereotypes often overlook the complexities of their situations, including barriers to employment and self-sufficiency, which contribute to their homelessness.
+        </div>
+      </div>
+    </div> 
+  </div>
 </div>
 
 <div class="body4">
   <h2 id="fourth">Next Steps</h2>
-  <p>Our dataset was large with many factors. If given further time, we would incorporate another dataset like Census Bureau financials.</p>
-  <p>We would also further research grants and grants awarded in past years.</p>
+  <p>Our dataset was large with many factors. If given further time, we would incorporate another dataset like <a href="https://data.census.gov/profile/United_States?g=010XX00US" target="_blank"><strong>Census Bureau</strong></a> data.</p>
+  <p>We would also further research <a href="https://www.hudexchange.info/programs/coc/awards-by-component/" target="_blank"><strong>grants</strong></a> and grants awarded in past years.</p>
   <p>Finally, we would like to incorporate a survey of unhoused individuals to better understand their needs.</p>
   <p>Take a deeper dive into the type of data we can find - explore census data, any other larger or even more uncommonly found datasets that can allow us to explore further into demographics and situational circumstances that may lead to homelessness.
     Use this data and prediction model to see if it can be used to predict if a person could face homelessness before it becomes a problem, and reach out to assist.</p>
-
+    <p><img src="Resources/Images/keytohome.jpg" alt="Keyboard" style="float: inherit; width: 450px; height: 300px;"></p>
 </div>
 
 <div class="body5">
@@ -253,57 +307,22 @@ text-align: center;
             Privacy
           </a>
         </div>
-        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div id="collapseOne" class="collapse" data-parent="#accordion">
           <div class="card-body">
-            Privacy is always a concern when working with data. All data was anonymized so that no personal information was included in the dataset. Due to this, it proves difficult to track individuals over time.
+            When working with individuals and sensitive data, privacy considerations are crucial to uphold. All data underwent anonymization to maintain privacy, thereby preventing the tracking of personal information and the analysis of individual cases over time.
           </div>
         </div>
       </div>
       <div class="card">
         <div class="card-header">
           <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-          Quality
+          Quality & Sampling Bias
         </a>
         </div>
         <div id="collapseTwo" class="collapse" data-parent="#accordion">
           <div class="card-body">
-            When working with a large dataset that spans the nation and different organizations, there may not be a consistent method of collection.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-            Mobility
-          </a>
-        </div>
-        <div id="collapseThree" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-            This population is very mobile and may not be counted in the same location each time. Point in time counts are not always accurate as there may not be sufficient staff for collection and topography can also be a barrier.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-            Sampling Bias
-          </a>
-        </div>
-        <div id="collapseFour" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-            Barriers to entry may have caused a sampling bias. For example, if a person is not able to access a shelter, they may not be counted. Also, if a person does not speak the language or they do not want help, they may not be counted. People may not consider themselves homeless if they are couch surfing or living in a car.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
-            Circumstances
-          </a>
-        </div>
-        <div id="collapseFive" class="collapse" data-parent="#accordion">
-          <div class="card-body">
-            People may not always be in a circumstance that would allow them to qualify for help in shelters, but also may not have a lifestyle that would allow for consistent/permanent residence status. Extenuating circumstances make it difficult to "label" someone's lifestyle and situation based on a handful of generalized demographics.
+            The count of homelessness is conducted a single night in January (PIT or Point-in-Time Count) in emergency shelters, transitional housing, and Safe Havens, with direct contact made with each person surveyed. Although this surveying method enables greater accuracy and detail in data collection, it may be subject to bias and limitations in terms of the locations and time span it covers.
+This population is very mobile and those who were not settled the night of data collection may not have been counted in the PIT count.
           </div>
         </div>
       </div>
@@ -315,7 +334,7 @@ text-align: center;
         </div>
         <div id="collapseSix" class="collapse" data-parent="#accordion">
           <div class="card-body">
-            Starting with the amount of time we had to work on this project, we were not able to dive as deep as we would have liked. We would have liked to have more time to explore the data and the possibilities of what we could do with it. Also, the data itself is limited by time. We only have data from 2007 to 2023. 
+            The availability of data during and after the COVID-19 pandemic is limited, thereby hindering our ability to accurately forecast future outcomes of the homelessness count. With more time and data, we could enhance our understanding of the evolving trends in homelessness and develop more accurate predictions for the future.
           </div>
         </div>
       </div>
@@ -324,13 +343,13 @@ text-align: center;
 
   <div class="body6">
     <h2 id="sixth">References</h2>
-    <p><a href="https://www.hudexchange.info/programs/coc/" target="_blank">HUD Exchange</a></p>
+    <p><a href="https://www.hudexchange.info/homelessness-assistance/data/" target="_blank">HUD Exchange</a></p>
        <ul>
           <li>2007 - 2023 Estimates by CoC</li>
           <li>2007 - 2023 Estimates by State</li>
        </ul>
 
-    <p><img src="homesunset.jpg" alt="Sunset" style="float:left;width:100%;height: 290px;object-fit:cover;"></p>
+    <p><img src="Resources/Images/homesunset.jpg" alt="Sunset" style="float:left;width:100%;height: 290px;object-fit:cover;"></p>
 
     </div>
 </section>
@@ -343,3 +362,4 @@ text-align: center;
 
 </body>
 </html>
+

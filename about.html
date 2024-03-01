@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url(laptopplants.jpg);
+    background-image: url(Resources/Images/laptopplants.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -23,13 +23,47 @@ body {
   padding: 8px;
   margin-top: 7px;
   text-align: left;
+  border-radius: 10px;
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 75px;
+  margin-top: 45px;
+}
+
+.card {
+  width:475px;
+  background-color: rgba(40,102,110,0.9);
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 30px 30px;
+  line-height: 1.3;
+}
+
+.card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fedc97;
+}
+
+.card p {
+  font-size: 16px;
+  color: #fedc97;
+  margin-bottom: 20px;
+}
 .footer {
   background-color: rgba(40,102,110,0.75);
   padding: 10px;
   text-align: center;
-  margin-top: 7px;
+  margin-top: 45px;
+  border-radius: 10px;
 }
 
 .footer a {
@@ -48,7 +82,7 @@ body {
 </head>
     <body style="font-family:'Trebuchet MS', sans-serif;color:#fedc97;">
 
-<div style="background-color:rgba(40,102,110,0.75);padding:15px;text-align:center;">
+<div style="background-color:rgba(40,102,110,0.75);padding:15px;text-align:center;border-radius: 10px;">
   <h1>About Us </h1>
 </div>
    
@@ -56,44 +90,50 @@ body {
     <div class="menu">
     </div>
   
-    <div class="main">
-      <h2>Our Team</h2>
+  <div class="main">
+    <h2>Our Team</h2>
       <p>Our team is made up of five members with diverse backgrounds and experiences. We are united by our passion for data analytics and our commitment to social justice. We are excited to use our skills to help address the issue of unhoused persons in the United States. </p>
+  </div>
+</div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-content">
+        <h1>Elise</h1>
+        <p>Elise has two years of experience working in operations and product in the education industry. With her degree in math and scientific computations, she brings a blend of analytical skills and programming expertise to her work. Elise discovered her interest in data analytics and visualization in college; driven by her curiosity and desire to uncover insights from complex datasets, she remains dedicated to mastering new techniques and methodologies in the field.</p>
+      </div>
     </div>
-    <div class="container">
-      <div class="card-columns">
-        <div class="card bg-info mb-3"style="max-width: 18rem;">
-          <div class="card-body text-center">
-            <p class="card-text"><strong>Elise:</strong> has two years of experience working in operations and product in the education industry. With her degree in math and scientific computations, she brings a blend of analytical skills and programming expertise to her work. Elise discovered her interest in data analytics and visualization in college; driven by her curiosity and desire to uncover insights from complex datasets, she remains dedicated to mastering new techniques and methodologies in the field.</p>
-          </div>
-        </div>
-        <div class="card bg-info mb-3"style="max-width: 18rem;">
-          <div class="card-body text-center">
-            <p class="card-text"><strong>Matthew:</strong> has three years of professional business experience working with marketing and social media data, conducting analyses to craft recommendations to enhance marketing campaigns. With his degree in Business Administration, he brings a skillset built off business and analytical knowledge and abilities. Matthew developed an interest in data analytics early on in his career, drawing an interest in identifying trends and solving data related problems.</p>
-          </div>
-        </div>
-        <div class="card bg-info mb-3"style="max-width: 18rem;">
-          <div class="card-body text-center">
-            <p class="card-text"><strong>Michael:</strong> is a data scientist with a passion for social justice. He has a background in machine learning and data analysis.</p>
-          </div>
-        </div>
-        <div class="card bg-info mb-3"style="max-width: 18rem;">
-          <div class="card-body text-center">
-            <p class="card-text"><strong>Scott:</strong> is a data analyst with a passion for social justice. He has a background in statistics and data visualization.</p>
-          </div>
-        </div>
-        <div class="card bg-info mb-3"style="max-width: 18rem;">
-          <div class="card-body text-center">
-            <p class="card-text"><strong>Teresa:</strong> has twenty years of banking experience prior to her introduction to analytics. Posesses a total of ten years of supervision and managerial experience. She enjoys guiding and working alongside Departmental Analysts as a supervisor for four years. Her favorite hobbies of knitting and crochet display her enthusiasm for math and creativity.</p>
-          </div>
-        </div>
+    <div class="card">
+     <div class="card-content">
+        <h1>Matthew</h1>
+        <p>Matthew has three years of professional business experience working with marketing and social media data, conducting analyses to craft recommendations to enhance marketing campaigns. With his degree in Business Administration, he brings a skillset built off business and analytical knowledge and abilities. Matthew developed an interest in data analytics early on in his career, drawing an interest in identifying trends and solving data related problems.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h1>Michael</h1>
+        <p>Michael is a data scientist with a passion for social justice. He has a background in machine learning and data analysis.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h1>Scott</h1>
+        <p>Scott is a data analyst with a passion for social justice. He has a background in statistics and data visualization</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h1>Teresa</h1>
+        <p>Teresa has twenty years of banking experience prior to her introduction to analytics. Posesses a total of ten years of supervision and managerial experience. She enjoys guiding and working alongside Departmental Analysts as a supervisor for four years. Her favorite hobbies of knitting and crochet display her enthusiasm for math and creativity.</p>
+      </div>
+    </div>
       </div>
     </div>
 </div>
 
 <div class="footer">
   
-  <a href="index.html"><img src="unhousedyellow.png" width="45" height="45" alt="Yellow Logo"></a>
+  <a href="index.html"><img src="Resources/Images/unhousedyellow.png" width="45" height="45" alt="Yellow Logo"></a>
 
 </div>
   
